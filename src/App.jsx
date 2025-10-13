@@ -1,7 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Login from "./components/Login";
+// import Login from "./components/Login";
+const Loginpage = React.lazy(() => import("./components/Login"));
+
 import Welcome from "./components/Welcome";
 import Footer from "./components/Footer";
 import { Profile } from "./components/Profile";
@@ -24,7 +26,7 @@ const App = () => {
         <Routes>
           <Route path="*" element={<Error />} />
           <Route path="/game" element={<Welcome />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/login" element={<Loginpage />} />
           <Route path="/singin" element={<Footer />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/" element={<WelcomeN />} />
