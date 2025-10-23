@@ -148,7 +148,7 @@ const Login = () => {
           {errors.age && <p style={styles.errorText}>{errors.age.message}</p>}
 
           <label htmlFor="password" style={styles.label}>
-            Password
+            Passwords
           </label>
           <input
             id="password"
