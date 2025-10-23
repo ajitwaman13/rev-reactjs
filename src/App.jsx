@@ -8,6 +8,7 @@ import Welcome from "./components/Welcome";
 import Footer from "./components/Footer";
 import { Profile } from "./components/Profile";
 import WelcomeN from "./components/WelcomeN";
+import Navbar from "./components/Navbar";
 // import { Home } from "./components/Home";
 
 const Error = () => {
@@ -22,7 +23,8 @@ const App = () => {
   return (
     <>
       <Router>
-        {/* <Home /> */}
+        <Navbar />
+
         <Routes>
           <Route path="*" element={<Error />} />
           <Route path="/game" element={<Welcome />} />
