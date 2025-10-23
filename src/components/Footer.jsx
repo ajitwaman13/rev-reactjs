@@ -12,6 +12,7 @@ const Footer = () => {
             <li>c</li>
             <li>d</li>
             <li>e</li>
+            <li>f</li>
           </ul>
         </div>
       </div>
