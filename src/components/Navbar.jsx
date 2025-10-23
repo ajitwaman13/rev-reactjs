@@ -14,7 +14,6 @@ const Navbar = () => {
 =======
     <div>
       <h1>welcome page</h1>
->>>>>>> main
     </div>
   );
 };
